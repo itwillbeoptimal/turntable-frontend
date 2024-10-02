@@ -47,7 +47,13 @@
     "@typescript-eslint/camelcase": "off",
     "import/extensions": [
       "error",
-      "ignorePackages"
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never",
+        "js": "never",
+        "jsx": "never"
+      }
     ],
     "import/no-extraneous-dependencies": [
       "error",
