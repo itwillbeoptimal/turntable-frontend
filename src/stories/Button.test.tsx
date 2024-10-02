@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
-import Button from './Button.tsx';
+import Button from './Button';
 
 test('renders button with label', () => {
   const handleClick = jest.fn();
