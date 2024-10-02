@@ -19,7 +19,8 @@
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended",
     "plugin:prettier/recommended",
-    "prettier"
+    "prettier",
+    "plugin:storybook/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -32,9 +33,28 @@
   },
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": ["warn", { "extensions": [".ts", ".tsx"] }],
+    "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [
+          ".ts",
+          ".tsx"
+        ]
+      }
+    ],
     "@typescript-eslint/camelcase": "off",
-    "import/extensions": ["error", "ignorePackages"],
+    "import/extensions": [
+      "error",
+      "ignorePackages"
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*test.ts", "**/*test.tsx", "**/*stories.ts", "**/*stories.tsx"]
+      }
+    ],
     "no-console": "error",
     "@typescript-eslint/lines-between-class-members": "off",
     "@typescript-eslint/no-throw-literal": "off"
@@ -43,5 +63,13 @@
     "build",
     "dist",
     "public"
+  ],
+  "overrides": [
+    {
+      "files": ["**/*.stories.tsx"],
+      "rules": {
+        "no-alert": "off"
+      }
+    }
   ]
 }
