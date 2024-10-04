@@ -54,6 +54,7 @@
     "globals": "^15.9.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "msw": "^2.4.9",
     "prettier": "^3.3.3",
     "storybook": "^8.3.4",
     "storybook-builder-vite": "latest",
