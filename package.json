@@ -54,6 +54,7 @@
     "globals": "^15.9.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
+    "msw": "^2.4.9",
     "prettier": "^3.3.3",
     "storybook": "^8.3.4",
     "storybook-builder-vite": "latest",
@@ -61,5 +62,10 @@
     "ts-node": "^10.9.2",
     "typescript": "5.4.3",
     "typescript-eslint": "^8.0.1"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }

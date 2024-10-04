@@ -58,7 +58,7 @@
     "import/no-extraneous-dependencies": [
       "error",
       {
-        "devDependencies": ["**/*test.ts", "**/*test.tsx", "**/*stories.ts", "**/*stories.tsx"]
+        "devDependencies": ["**/*test.ts", "**/*test.tsx", "**/*stories.ts", "**/*stories.tsx", "**/mocks/*"]
       }
     ],
     "no-console": "error",
