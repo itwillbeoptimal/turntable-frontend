@@ -243,7 +243,7 @@ const handlers = [
     const youtubeId = youtubeIdMap[songId];
 
     if (youtubeId) {
-      return new Response(JSON.stringify({ videoId: youtubeId }), {
+      return new Response(JSON.stringify({ youtubeId }), {
         status: 200,
         headers: { 'Content-Type': 'application/json' },
       });
